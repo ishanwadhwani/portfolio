@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+
+:root {
+    --primary-orange: #CC5500;
+    --secondary-orange: #F9B75D;
+}
+@layer base {
+    * {
+        @apply font-[Kanit]
+    }
+    h1 {
+        @apply text-3xl font-semibold
+    }
+    li {
+        @apply p-4
+    }
+    button {
+    /* --secondary-orange: #F9B75D; */
+    @apply bg-gradient-to-r from-[var(--primary-orange)] to-[var(--secondary-orange)] py-3 px-7 rounded-3xl
+    }
+}
