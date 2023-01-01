@@ -2,14 +2,14 @@ import React from 'react'
 
 const contact = () => {
   return (
-    <div contact='contact' className='w-full h-screen bg-black p-4 text-white'>
-        <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full'>
+    <div name="contact" className='w-full h-screen bg-black p-4 text-white md:'>
+        <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full '>
             <div className='pb-8'>
-                <p className='text-[#CC5500] text-4xl font-bold inline border-b-4
+                <p className='text-[#CC5500] text-4xl font-bold inline border-b-4 
                  border-white hover:text-white hover:border-[#CC5500]'>Contact</p>
                 <p className='py-6 text-xl'>Fill the given form to get in touch with me...</p>
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center '>
                 <form action="https://getform.io/f/1bc767ed-c1b8-4507-a451-00112b37e4f0" method='POST' className='flex flex-col w-full md:w-1/2 '>
 
                     <input type="text" name="name" placeholder='Enter your name'

@@ -52,13 +52,13 @@ const Skills = () => {
         },
     ]
   return (
-    <div name='skills' className='bg-black w-full h-screen' >
+    <div name='skills' className='bg-black w-full h-screen p-4' >
         <div className='max-w-screen-lg mx-auto p-4 flex flex-col 
         justify-center w-full h-full text-white'>
-            <div>
+            <div className='py-6'>
                 <p className='text-[#CC5500] text-4xl font-bold inline border-b-4 border-white
                  hover:text-white hover:border-[#CC5500]'>Skills</p>
-                <p className='py-6 text-xl'>Languages I've worked with...</p>
+                {/* <p className='text-xl py-2'>Languages I've worked with...</p> */}
             </div>
             <div className='w-full grid grid-cols-2 sm:grid-cols-3
             gap-8 text-center py-8 px-12 sm:px-0'>
