@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Logo from '../assests/logoimg.png'
+import Logo from '../assests/logo.png'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { Link, animateScroll as scroll} from 'react-scroll'
 
@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className='w-full h-[90px] bg-black'>
         <div className='max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full '>
-            <div className=' hover:duration-1000 hover:animate-pulse'>
+            <div className=' hover:duration-1000 hover:animate-pulse '>
                 <img src={ Logo } width='90px' height='90px' alt="Ishan" />
                 {/* <h1 className='text-[#CC5500]'>Ishan</h1> */}
             </div>
