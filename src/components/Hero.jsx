@@ -1,7 +1,7 @@
 import React from 'react'
 import Video from '../assests/video.mp4'
 import { BiRightArrowAlt } from 'react-icons/bi'
-import { Link, animateScroll as scroll} from 'react-scroll'
+import { Link } from 'react-scroll'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import {AiFillMail} from 'react-icons/ai'
