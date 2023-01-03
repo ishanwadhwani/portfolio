@@ -8,7 +8,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact"
 function App() {
   return (
-    <div>
+    <div className="App">
       <Navbar />
       <Hero />
       <About />
