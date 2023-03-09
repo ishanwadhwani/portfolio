@@ -1,7 +1,7 @@
 import React from 'react'
 import Project1 from '../assests/portfolio/project1.png'
 import Project2 from '../assests/portfolio/ecommerce.png'
-import Project3 from '../assests/portfolio/project3.png'
+import Project3 from '../assests/portfolio/tracker.png'
 import Project4 from '../assests/portfolio/project4.png'
 const Portfolio = () => {
     const projects = [
@@ -12,11 +12,14 @@ const Portfolio = () => {
         {
             id: 2,
             src: Project2,
-            title: 'Clothing Website'
+            title: 'Clothing Website',
+            code: 'https://github.com/ishanwadhwani/ecommerce/tree/master'
         },
         {
             id: 3,
-            src: Project3
+            src: Project3,
+            title: 'Accident Tracker',
+            code: 'https://github.com/ishanwadhwani/accident-tracker'
         },
         {
             id: 4,
@@ -34,16 +37,16 @@ const Portfolio = () => {
 
 
             {/* cards */}
-            <div  className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
+            <div  className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 '>
             {
-                projects.map(({id, src, title}) => (
+                projects.map(({id, src, title, code}) => (
 
                     <div key={id} className='shadow-md hover:shadow-white rounded-lg '>
                         <img src={src} alt="" className='rounded-md duration-500 hover:scale-105'/>
                         <p className='text-center p-2'>{title}</p>
                         <div className='flex justify-center items-center'>
-                            <button className='w-1/2 px-6 py-3 m-4 duration-500 hover:scale-105'>Demo</button>
-                            <button className='w-1/2 px-6 py-3 m-4 duration-500 hover:scale-105'>Code</button>
+                            <a  className='w-1/2 px-6 py-3 m-4 duration-500 hover:scale-105'><button>Demo</button></a>
+                            <a href={code} className='w-1/2 px-6 py-3 m-4 duration-500 hover:scale-105'><button >Code</button></a>
                         </div>
                     </div>
 
