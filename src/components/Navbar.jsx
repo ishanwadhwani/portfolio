@@ -17,10 +17,14 @@ const Navbar = () => {
             </div>
             <div className='hidden md:flex'>
                 <ul className='flex text-[#CC5500] items-center'>
-                    <li className='hover:text-white hover:cursor-default transition duration-700'><Link to="home" smooth={true} duration={1000}>Home</Link></li>
-                    <li className='hover:text-white hover:cursor-default transition duration-700'><Link to="about" smooth={true} duration={1000}>About</Link></li>
-                    <li className='hover:text-white hover:cursor-default transition duration-700'><Link to="projects" smooth={true} duration={1000}>Projects</Link></li>
-                    <li className='hover:text-white hover:cursor-default transition duration-700'><Link to="skills" smooth={true} duration={1000}>Skills</Link></li>
+                    <li className='hover:text-white hover:cursor-default transition duration-700'>
+                        <Link to="home" smooth={true} duration={1000}>Home</Link></li>
+                    <li className='hover:text-white hover:cursor-default transition duration-700'>
+                        <Link to="about" smooth={true} duration={1000}>About</Link></li>
+                    <li className='hover:text-white hover:cursor-default transition duration-700'>
+                        <Link to="projects" smooth={true} duration={1000}>Projects</Link></li>
+                    <li className='hover:text-white hover:cursor-default transition duration-700'>
+                        <Link to="skills" smooth={true} duration={1000}>Skills</Link></li>
                     <Link to="contact" smooth={true} duration={1000}>
                     <button className='text-white ml-4 hover:scale-110 duration-1000'>
                         Contact
